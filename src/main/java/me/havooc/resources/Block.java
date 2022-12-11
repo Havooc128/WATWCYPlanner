@@ -32,9 +32,6 @@ public class Block {
     }
 
     public Block(String lesson) {
-        //   <span class="date">2022_10_04</span><span class="block_id">block1</span><span class="name">PGI<br>(w)
-        //   <br>314 S<br>[1]</span><span class="info">Podstawy grafiki inżynierskiej - (Wykład) </span>
-        //   <span class="colorp">#FFC0CB</span><span class="sSkrotProwadzacego"></span>
         this(
                 Integer.parseInt(Objects.requireNonNull(getTextFromLesson(lesson, BLOCK_ID))), /*id*/
                 getTextFromLesson(lesson,BLOCK_DATE), /*date*/
